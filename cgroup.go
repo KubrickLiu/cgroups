@@ -25,7 +25,7 @@ import (
 	"strings"
 	"sync"
 
-	v1 "github.com/containerd/cgroups/stats/v1"
+	v1 "github.com/KubrickLiu/cgroups/stats/v1"
 
 	"github.com/opencontainers/runtime-spec/specs-go"
 )
@@ -84,7 +84,7 @@ func Load(hierarchy Hierarchy, path Path, opts ...InitOpts) (Cgroup, error) {
 	for _, s := range pathers(subsystems) {
 		p, err := path(s.Name())
 		if err != nil {
-			if  errors.Is(err, os.ErrNotExist) {
+			if errors.Is(err, os.ErrNotExist) {
 				return nil, ErrCgroupDeleted
 			}
 			if err == ErrControllerNotActive {

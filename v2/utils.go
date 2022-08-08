@@ -28,7 +28,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/containerd/cgroups/v2/stats"
+	"github.com/KubrickLiu/cgroups/v2/stats"
 
 	"github.com/godbus/dbus/v5"
 	"github.com/opencontainers/runtime-spec/specs-go"

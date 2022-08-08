@@ -1,5 +1,5 @@
 file {
-  name: "github.com/containerd/cgroups/v2/stats/metrics.proto"
+  name: "github.com/KubrickLiu/cgroups/v2/stats/metrics.proto"
   package: "io.containerd.cgroups.v2"
   dependency: "gogoproto/gogo.proto"
   message_type {

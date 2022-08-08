@@ -24,7 +24,7 @@ import (
 	"strings"
 	"testing"
 
-	v1 "github.com/containerd/cgroups/stats/v1"
+	v1 "github.com/KubrickLiu/cgroups/stats/v1"
 )
 
 const memoryData = `cache 1

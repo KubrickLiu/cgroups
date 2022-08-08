@@ -19,7 +19,7 @@ package cgroups
 import (
 	"os"
 
-	v1 "github.com/containerd/cgroups/stats/v1"
+	v1 "github.com/KubrickLiu/cgroups/stats/v1"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 )
 
